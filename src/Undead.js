@@ -1,10 +1,9 @@
 import Character from './index';
 
-class Undead extends Character {
+export default class Undead extends Character {
   constructor(name, type) {
     super(name, type);
-    super.checkName();
-    super.checkType();
-    super.attackAnddefenceValue();
+    this.attack = 25;
+    this.defence = 25;
   }
 }

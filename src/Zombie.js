@@ -1,10 +1,9 @@
 import Character from './index';
 
-class Zombie extends Character {
+export default class Zombie extends Character {
   constructor(name, type) {
     super(name, type);
-    super.checkName();
-    super.checkType();
-    super.attackAnddefenceValue();
+    this.attack = 40;
+    this.defence = 10;
   }
 }

@@ -3,8 +3,7 @@ import Character from './index';
 export default class Bowman extends Character {
   constructor(name, type) {
     super(name, type);
-    super.checkName();
-    super.checkType();
-    super.attackAnddefenceValue();
+    this.attack = 25;
+    this.defence = 25;
   }
 }

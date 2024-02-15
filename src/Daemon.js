@@ -1,10 +1,9 @@
 import Character from './index';
 
-class Daemon extends Character {
+export default class Daemon extends Character {
   constructor(name, type) {
     super(name, type);
-    super.checkName();
-    super.checkType();
-    super.attackAnddefenceValue();
+    this.attack = 10;
+    this.defence = 40;
   }
 }

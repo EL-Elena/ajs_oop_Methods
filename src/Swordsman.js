@@ -1,10 +1,9 @@
 import Character from './index';
 
-class Swordsman extends Character {
+export default class Swordsman extends Character {
   constructor(name, type) {
     super(name, type);
-    super.checkName();
-    super.checkType();
-    super.attackAnddefenceValue();
+    this.attack = 40;
+    this.defence = 10;
   }
 }

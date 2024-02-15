@@ -1,22 +1,22 @@
-import Bowman from '../Bowman';
+import Magician from '../Magician';
 
-const checkClass = new Bowman('John', 'bowman');
+const checkClass = new Magician('John', 'magician');
 const correctObj = {
   name: 'John',
-  type: 'bowman',
+  type: 'magician',
   health: 100,
   level: 1,
-  attack: 25,
-  defence: 25,
+  attack: 10,
+  defence: 40,
 };
 
 const levelUpObj = {
   name: 'John',
-  type: 'bowman',
+  type: 'magician',
   health: 100,
   level: 2,
-  attack: 30,
-  defence: 30,
+  attack: 12,
+  defence: 48,
 };
 
 test('Creating new Character', () => {
@@ -30,5 +30,5 @@ test('Checking levelUp with health >0', () => {
 
 test('Checking damage work with health >0', () => {
   checkClass.damage(25);
-  expect(checkClass.health).toBeCloseTo(82.5);
+  expect(checkClass.health).toBeCloseTo(87);
 });
